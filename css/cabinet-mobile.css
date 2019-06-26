@@ -9,7 +9,7 @@
 .cabinet-mobile-btn span:first-child { top: 0; } 
 .cabinet-mobile-btn span:last-child { bottom: 0; } 
 .cabinet-mobile-btn span:nth-child(2) { top: 50%; margin-top: -1px; }
-.cabinet-mobile-callback { color: #1D7BFA; font-size: 14px; line-height: 16px; margin-top: 11px; display: inline-block; } 
+.cabinet-mobile-callback { color: #1D7BFA; font-size: 14px; line-height: 16px; margin-top: 13px; display: inline-block; } 
 .cabinet-mobile-auth { width: 20px; height: 20px; background: url(../img/pc.svg)no-repeat 50% 50%; display: block; margin: 10px auto 0; }
 .cabinet-mobile-logout { width: 20px; height: 20px; background: url(../img/logout.svg)no-repeat 50% 50%; display: block; margin: 10px auto 0; }
 

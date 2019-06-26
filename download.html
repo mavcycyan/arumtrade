@@ -1,0 +1,133 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ARUM | Meta Trader</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<!--<link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+	<link rel="icon shortcut" href="/static/favicon.ico" type="image/x-in">
+	<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/cabinet-mobile.css">
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="cabinet-mobile">
+        <header class="cabinet-mobile-isreg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <button class="cabinet-mobile-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="cabinet-mobile-logo"><img src="img/logo-mob.svg" alt=""></div>
+                    </div>
+                    <div class="col-xs-6">
+                    </div>
+                    <div class="col-xs-2">
+                        <a href="#" class="cabinet-mobile-logout"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="cabinet-mobile-in">
+            <div class="cabinet-mobile-in-head">
+                <div class="cabinet-mobile-in-head-ttl">Документы</div>
+                <a href="#" class="cabinet-mobile-in-head-back"></a>
+            </div>
+            <div class="cabinet-mobile-download">
+                <div class="cabinet-mobile-download-top"><span>Требования к документам:</span> четкая цветная скан-копия или фотография хорошего качества (на английском языке либо заверенный перевод на английский язык).</div>
+                <div class="cabinet-mobile-download-cont">
+                    <div class="cabinet-mobile-download-bl">
+                        <div class="cabinet-mobile-download-ttl">Документ, удостоверяющий личность</div>
+                        <div class="cabinet-mobile-download-input">
+                            <span class="imp"></span>
+                            <label for="fininf1">Наименование документа</label>
+                            <select name="" id="fininf1">
+                                <option value="" checked="" disabled=""></option>
+                                <option value="Заграничный паспорт">Заграничный паспорт</option>
+                                <option value="Паспорт">Паспорт</option>
+                            </select>
+                        </div>
+                        <div class="cabinet-mobile-download-zagr"><img src="img/file.svg" alt="">Загрузите файл</div>
+                        <div class="cabinet-mobile-download-img">
+                            <img src="img/download-img.jpg" alt="">
+                            <span class="del"></span>
+                            <div class="cabinet-mobile-download-img-info">
+                                <div class="cabinet-mobile-download-img-ttl">kdflkdlf.jpg</div>
+                                <div class="cabinet-mobile-download-img-size">200 кб</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cabinet-mobile-download-bl">
+                        <div class="cabinet-mobile-download-ttl">Документ, удостоверяющий личность</div>
+                        <div class="cabinet-mobile-download-input">
+                            <span class="imp"></span>
+                            <label for="fininf2">Наименование документа</label>
+                            <select name="" id="fininf2">
+                                <option value="" checked="" disabled=""></option>
+                                <option value="Заграничный паспорт">Выписка из банка</option>
+                                <option value="Паспорт">Паспорт</option>
+                            </select>
+                        </div>
+                        <div class="cabinet-mobile-download-zagr"><img src="img/file.svg" alt="">Загрузите файл</div>
+                        <div class="cabinet-mobile-download-img">
+                            <img src="img/download-img.jpg" alt="">
+                            <span class="del"></span>
+                            <div class="cabinet-mobile-download-img-info">
+                                <div class="cabinet-mobile-download-img-ttl">kdflkdlf.jpg</div>
+                                <div class="cabinet-mobile-download-img-size">200 кб</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cabinet-mobile-download-bl">
+                        <div class="cabinet-mobile-download-ttl">Документ, подтверждающий адрес регистрации</div>
+                        <div class="cabinet-mobile-download-input">
+                            <span class="imp"></span>
+                            <label for="fininf3">Наименование документа</label>
+                            <select name="" id="fininf3">
+                                <option value="" checked="" disabled=""></option>
+                                <option value="Счет за коммунальные услуги">Счет за коммунальные услуги</option>
+                                <option value="Паспорт">Паспорт</option>
+                            </select>
+                        </div>
+                        <div class="cabinet-mobile-download-zagr"><img src="img/file.svg" alt="">Загрузите файл</div>
+                        <div class="cabinet-mobile-download-img">
+                            <img src="img/download-img.jpg" alt="">
+                            <span class="del"></span>
+                            <div class="cabinet-mobile-download-img-info">
+                                <div class="cabinet-mobile-download-img-ttl">kdflkdlf.jpg</div>
+                                <div class="cabinet-mobile-download-img-size">200 кб</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cabinet-mobile-download-check-wp">
+                    <div class="cabinet-mobile-download-check">
+                        <input type="checkbox" id="fininf4">
+                        <label for="fininf4"><span></span>Arum Trade оставляет за собой право запросить дополнительные документы, подтверждающиее источники инвестируемых денежных средств, а также любые другие документы в соответствии с процедурами AML, которые я обязуюсь предоставить.</label>
+                    </div> 
+                    <div class="cabinet-mobile-download-check">
+                        <input type="checkbox" id="fininf5">
+                        <label for="fininf5"><span></span>Я обязуюсь своевременно информировать Arum Trade письменно или любым другим способом коммуникации не позднее, чем через 30 дней с момента изменения предоставленной мной информации.</label>
+                    </div>                
+                </div>                
+                <div class="cabinet-mobile-download-top"><span>Важно:</span> такие финансовые продукты, как Форекс и контракты на разницу, а также иные продукты, предлагаемые Arum Trade LTD, могут не подойти Вам. В связи с этим просим Вас убедиться, что Вы ознакомились с данными продуктами и полностью понимаете их, а также осознаете риски, связанные с ними, до начала торговли в компании Arum Trade LTD.</div>
+                <a href="#" class="cabinet-mobile-download-btn">отправить документы</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

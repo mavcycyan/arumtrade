@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ARUM | Meta Trader</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<!--<link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+	<link rel="icon shortcut" href="/static/favicon.ico" type="image/x-in">
+	<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/cabinet-mobile.css">
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="cabinet-mobile">
+        <header class="cabinet-mobile-isreg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <button class="cabinet-mobile-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="cabinet-mobile-logo"><img src="img/logo-mob.svg" alt=""></div>
+                    </div>
+                    <div class="col-xs-6">
+                    </div>
+                    <div class="col-xs-2">
+                        <a href="#" class="cabinet-mobile-logout"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="cabinet-mobile-in">
+            <div class="cabinet-mobile-in-head">
+                <div class="cabinet-mobile-in-head-ttl">Торговые счета</div>
+                <a href="#" class="cabinet-mobile-in-head-back"></a>
+            </div>
+            <div class="cabinet-mobile-torgcnt">
+                <div class="cabinet-mobile-torgcnt-top">
+                    <div class="cabinet-mobile-torgcnt-top-left">
+                        <div class="cabinet-mobile-torgcnt-top-txt">На лицевом счету:</div>
+                        <div class="cabinet-mobile-torgcnt-top-num">$ 14 999 954,0</div>
+                    </div>
+                    <div class="cabinet-mobile-torgcnt-top-right">
+                        <a href="#" class="cabinet-mobile-torgcnt-top-btn">Новый счет</a>
+                    </div>
+                </div>
+                <a href="#tab1" class="cabinet-mobile-torgcnt-tab active">
+                    Стратегия “Полуночная”
+                </a>
+                <div id="tab1" class="cabinet-mobile-torgcnt-table">
+                    <div class="cabinet-mobile-torgcnt-table-row">
+                        <div class="cabinet-mobile-torgcnt-table-col one"><span class="ttl">№ счета</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col two"><span class="ttl">Плечо</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col three"><span class="ttl">Баланс</span></div>
+                    </div>
+                    <div class="cabinet-mobile-torgcnt-table-row">
+                        <div class="cabinet-mobile-torgcnt-table-col one"><span class="">134862</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col two"><span class="">1</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col three"><span class="">990</span></div>
+                    </div>
+                    <div class="cabinet-mobile-torgcnt-table-row">
+                        <div class="cabinet-mobile-torgcnt-table-col one"><span class="">134853</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col two"><span class="">200</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col three"><span class="">13</span></div>
+                    </div>
+                    <div class="cabinet-mobile-torgcnt-table-row">
+                        <div class="cabinet-mobile-torgcnt-table-col one"><span class="">5000001</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col two"><span class="">1</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col three"><span class="">52</span></div>
+                    </div>
+                    <div class="cabinet-mobile-torgcnt-table-row">
+                        <div class="cabinet-mobile-torgcnt-table-col one"><span class="">5000014</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col two"><span class="">100</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col three"><span class="">0</span></div>
+                    </div>
+                    <div class="cabinet-mobile-torgcnt-table-row">
+                        <div class="cabinet-mobile-torgcnt-table-col one"><span class="">5000016</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col two"><span class="">200</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col three"><span class="">0</span></div>
+                    </div>
+                </div>
+                <a href="#tab2" class="cabinet-mobile-torgcnt-tab">
+                    Стратегия “Полуночная”
+                </a>
+                <div id="tab2" class="cabinet-mobile-torgcnt-table" style="display: none;">
+                    <div class="cabinet-mobile-torgcnt-table-row">
+                        <div class="cabinet-mobile-torgcnt-table-col one"><span class="ttl">№ счета</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col two"><span class="ttl">Плечо</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col three"><span class="ttl">Баланс</span></div>
+                    </div>
+                    <div class="cabinet-mobile-torgcnt-table-row">
+                        <div class="cabinet-mobile-torgcnt-table-col one"><span class="">134862</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col two"><span class="">1</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col three"><span class="">990</span></div>
+                    </div>
+                    <div class="cabinet-mobile-torgcnt-table-row">
+                        <div class="cabinet-mobile-torgcnt-table-col one"><span class="">134853</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col two"><span class="">200</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col three"><span class="">13</span></div>
+                    </div>
+                    <div class="cabinet-mobile-torgcnt-table-row">
+                        <div class="cabinet-mobile-torgcnt-table-col one"><span class="">5000001</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col two"><span class="">1</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col three"><span class="">52</span></div>
+                    </div>
+                    <div class="cabinet-mobile-torgcnt-table-row">
+                        <div class="cabinet-mobile-torgcnt-table-col one"><span class="">5000014</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col two"><span class="">100</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col three"><span class="">0</span></div>
+                    </div>
+                    <div class="cabinet-mobile-torgcnt-table-row">
+                        <div class="cabinet-mobile-torgcnt-table-col one"><span class="">5000016</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col two"><span class="">200</span></div>
+                        <div class="cabinet-mobile-torgcnt-table-col three"><span class="">0</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.cabinet-mobile-torgcnt-tab').click(function(e){
+            e.preventDefault();
+            if($(this).hasClass('active')){
+                $('.cabinet-mobile-torgcnt-tab').removeClass('active');
+            }
+            else {
+                $('.cabinet-mobile-torgcnt-tab').removeClass('active');
+                $(this).addClass('active');
+            }
+            
+            $('.cabinet-mobile-torgcnt-table').slideUp();
+            
+            if($($(this).attr('href')).css('display') == 'block')
+                $($(this).attr('href')).slideUp();
+            else
+                $($(this).attr('href')).slideDown();
+        });
+    </script>
+</body>
+</html>

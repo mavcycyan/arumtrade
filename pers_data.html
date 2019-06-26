@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ARUM | Meta Trader</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<!--<link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+	<link rel="icon shortcut" href="/static/favicon.ico" type="image/x-in">
+	<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/cabinet-mobile.css">
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="cabinet-mobile">
+        <header class="cabinet-mobile-isreg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <button class="cabinet-mobile-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="cabinet-mobile-logo"><img src="img/logo-mob.svg" alt=""></div>
+                    </div>
+                    <div class="col-xs-6">
+                    </div>
+                    <div class="col-xs-2">
+                        <a href="#" class="cabinet-mobile-logout"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="cabinet-mobile-in">
+            <div class="cabinet-mobile-in-head">
+                <div class="cabinet-mobile-in-head-ttl">Персональные данные</div>
+                <a href="#" class="cabinet-mobile-in-head-back"></a>
+            </div>
+            <div class="cabinet-mobile-pers_data">
+                <div class="cabinet-mobile-pers_data-info">
+                    <div class="cabinet-mobile-pers_data-ttl">Личная информация</div>
+                    <div class="cabinet-mobile-pers_data-input">
+                        <span class="imp"></span>
+                        <label for="pers1">Имя пользователя</label>
+                        <input type="text" id="pers1">
+                    </div>
+                    <div class="cabinet-mobile-pers_data-input">
+                        <span class="imp"></span>
+                        <label for="pers2">Имя</label>
+                        <input type="text" id="pers2">
+                    </div>
+                    <div class="cabinet-mobile-pers_data-input">
+                        <span class="imp"></span>
+                        <label for="pers3">Фамилия</label>
+                        <input type="text" id="pers3">
+                    </div>
+                    <div class="cabinet-mobile-pers_data-input">
+                        <span class="imp"></span>
+                        <label for="pers4">Отчество</label>
+                        <input type="text" id="pers4">
+                    </div>
+                    <div class="cabinet-mobile-pers_data-input">
+                        <span class="imp"></span>
+                        <label for="pers5">Дата рождения</label>
+                        <input type="text" id="pers5">
+                    </div>
+                    <div class="cabinet-mobile-pers_data-ttl">Контакты</div>
+                    <div class="cabinet-mobile-pers_data-input">
+                        <span class="imp"></span>
+                        <label for="pers6">Мобильный телефон</label>
+                        <input type="text" id="pers6">
+                    </div>
+                    <div class="cabinet-mobile-pers_data-input">
+                        <span class="imp"></span>
+                        <label for="pers7">Электронный адрес</label>
+                        <input type="text" id="pers7">
+                    </div>
+                    <div class="cabinet-mobile-pers_data-ttl">Другое</div>
+                    <div class="cabinet-mobile-pers_data-input">
+                        <span class="imp"></span>
+                        <label for="pers8">Место рождения</label>
+                        <input type="text" id="pers8">
+                    </div>
+                    <div class="cabinet-mobile-pers_data-input">
+                        <span class="imp"></span>
+                        <label for="pers9">Гражданство</label>
+                        <input type="text" id="pers9">
+                    </div>
+                    <div class="cabinet-mobile-pers_data-input">
+                        <span class="imp"></span>
+                        <label for="pers10">ИНН</label>
+                        <input type="text" id="pers10">
+                    </div>
+                    <div class="cabinet-mobile-pers_data-bl">
+                        <div class="cabinet-mobile-pers_data-txt">Распространяются ли на вас требования FATCA?</div>
+                        <div class="cabinet-mobile-pers_data-radio">
+                            <div class="rad">
+                                <input type="radio" name="pers11" id="pers11-1">
+                                <label for="pers11-1"><span></span>Да</label>
+                            </div>
+                            <div class="rad">
+                                <input type="radio" name="pers11" id="pers11-2">
+                                <label for="pers11-2"><span></span>Нет</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cabinet-mobile-pers_data-bl">
+                        <div class="cabinet-mobile-pers_data-txt">Относите ли вы себя к Политически значимым лицам либо имеете тесные связи с таким лицом?</div>
+                        <div class="cabinet-mobile-pers_data-radio">
+                            <div class="rad">
+                                <input type="radio" name="pers12" id="pers12-1">
+                                <label for="pers12-1"><span></span>Да</label>
+                            </div>
+                            <div class="rad">
+                                <input type="radio" name="pers12" id="pers12-2">
+                                <label for="pers12-2"><span></span>Нет</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cabinet-mobile-pers_data-check">
+                        <input type="checkbox" id="pers13">
+                        <label for="pers13"><span></span>Я подтверждаю, что являюсь конечным фактическим владельцем счета</label>
+                    </div>
+                    <div class="cabinet-mobile-pers_data-check">
+                        <input type="checkbox" id="pers14">
+                        <label for="pers14"><span></span>Я подтверждаю, что инвестируемые средства были получены законным путем</label>
+                    </div>
+                    <a href="#" class="cabinet-mobile-pers_data-btn">Далее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

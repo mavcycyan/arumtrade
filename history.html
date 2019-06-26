@@ -1,0 +1,139 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ARUM | Meta Trader</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<!--<link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+	<link rel="icon shortcut" href="/static/favicon.ico" type="image/x-in">
+	<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/cabinet-mobile.css">
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="cabinet-mobile">
+        <header class="cabinet-mobile-isreg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <button class="cabinet-mobile-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="cabinet-mobile-logo"><img src="img/logo-mob.svg" alt=""></div>
+                    </div>
+                    <div class="col-xs-6">
+                    </div>
+                    <div class="col-xs-2">
+                        <a href="#" class="cabinet-mobile-logout"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="cabinet-mobile-in">
+            <div class="cabinet-mobile-in-head">
+                <div class="cabinet-mobile-in-head-ttl">Торговые счета</div>
+                <a href="#" class="cabinet-mobile-in-head-back"></a>
+            </div>
+            <div class="cabinet-mobile-history">
+                <a href="#tab1" class="cabinet-mobile-history-tab">
+                    14 июня 2019
+                </a>
+                <div id="tab1" class="cabinet-mobile-history-cont" style="display: none;">
+                    <a href="#tab1-1" class="cabinet-mobile-history-subtab">
+                        10:11
+                    </a>
+                    <div id="tab1-1" class="cabinet-mobile-history-cont-in" style="display: none;">
+                        <div class="cabinet-mobile-history-cont-in-row">Счет списания: <span>Лицевой счет</span></div>
+                        <div class="cabinet-mobile-history-cont-in-row">Сумма перевода: <span>80</span></div>
+                        <div class="cabinet-mobile-history-cont-in-row">Счет пополнения: <span>ECN.Trade.Demo</span></div>
+                        <div class="cabinet-mobile-history-cont-in-row">Статус: <span><img src="img/done2.svg" alt=""> Выполнен</span></div>
+                    </div>
+                </div>
+                <a href="#tab2" class="cabinet-mobile-history-tab">
+                    15 июня 2019
+                </a>
+                <div id="tab2" class="cabinet-mobile-history-cont" style="display: none;">
+                    <a href="#tab2-1" class="cabinet-mobile-history-subtab">
+                        11:11
+                    </a>
+                    <div id="tab2-1" class="cabinet-mobile-history-cont-in" style="display: none;">
+                        <div class="cabinet-mobile-history-cont-in-row">Счет списания: <span>Лицевой счет</span></div>
+                        <div class="cabinet-mobile-history-cont-in-row">Сумма перевода: <span>80</span></div>
+                    </div>
+                    <a href="#tab2-2" class="cabinet-mobile-history-subtab">
+                        10:11
+                    </a>
+                    <div id="tab2-2" class="cabinet-mobile-history-cont-in" style="display: none;">
+                        <div class="cabinet-mobile-history-cont-in-row">Счет списания: <span>Лицевой счет</span></div>
+                        <div class="cabinet-mobile-history-cont-in-row">Сумма перевода: <span>80</span></div>
+                    </div>
+                </div>
+                <a href="#tab3" class="cabinet-mobile-history-tab">
+                    14 июня 2019
+                </a>
+                <div id="tab3" class="cabinet-mobile-history-cont" style="display: none;">
+                    <a href="#tab3-1" class="cabinet-mobile-history-subtab">
+                        10:11
+                    </a>
+                    <div id="tab3-1" class="cabinet-mobile-history-cont-in" style="display: none;">
+                        <div class="cabinet-mobile-history-cont-in-row">Счет списания: <span>Лицевой счет</span></div>
+                        <div class="cabinet-mobile-history-cont-in-row">Сумма перевода: <span>80</span></div>
+                        <div class="cabinet-mobile-history-cont-in-row">Счет пополнения: <span>ECN.Trade.Demo</span></div>
+                        <div class="cabinet-mobile-history-cont-in-row">Статус: <span><img src="img/done2.svg" alt=""> Выполнен</span></div>
+                    </div>
+                </div>
+                <a href="#" class="cabinet-mobile-history-btn">Показать больше</a>                
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.cabinet-mobile-history-tab').click(function(e){
+            e.preventDefault();
+            if($(this).hasClass('active')){
+                $('.cabinet-mobile-history-tab').removeClass('active');
+            }
+            else {
+                $('.cabinet-mobile-history-tab').removeClass('active');
+                $(this).addClass('active');
+            }
+            
+            $('.cabinet-mobile-history-cont').slideUp();
+            
+            if($($(this).attr('href')).css('display') == 'block')
+                $($(this).attr('href')).slideUp();
+            else
+                $($(this).attr('href')).slideDown();
+        });
+        $('.cabinet-mobile-history-subtab').click(function(e){
+            e.preventDefault();
+            if($(this).hasClass('active')){
+                $('.cabinet-mobile-history-subtab').removeClass('active');
+            }
+            else {
+                $('.cabinet-mobile-history-subtab').removeClass('active');
+                $(this).addClass('active');
+            }
+            
+            //$('.cabinet-mobile-history-cont-in').slideUp();
+            
+            if($($(this).attr('href')).css('display') == 'block')
+                $($(this).attr('href')).slideUp();
+            else
+                $($(this).attr('href')).slideDown();
+        });        
+    </script>
+</body>
+</html>

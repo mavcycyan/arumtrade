@@ -1,0 +1,92 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ARUM | Meta Trader</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<!--<link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+	<link rel="icon shortcut" href="/static/favicon.ico" type="image/x-in">
+	<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/cabinet-mobile.css">
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="cabinet-mobile">
+        <header class="cabinet-mobile-isreg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <button class="cabinet-mobile-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="cabinet-mobile-logo"><img src="img/logo-mob.svg" alt=""></div>
+                    </div>
+                    <div class="col-xs-6">
+                    </div>
+                    <div class="col-xs-2">
+                        <a href="#" class="cabinet-mobile-logout"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="cabinet-mobile-in">
+            <div class="cabinet-mobile-in-head">
+                <div class="cabinet-mobile-in-head-ttl">Экономич. календарь</div>
+                <a href="#" class="cabinet-mobile-in-head-back"></a>
+            </div>
+            <div class="cabinet-mobile-indik">
+                <a href="#tab1" class="cabinet-mobile-indik-tab">
+                    Валовой внутренний продукт
+                </a>
+                <div id="tab1" class="cabinet-mobile-indik-cont" style="display: none;">
+                    <div class="cabinet-mobile-indik-cont-row">Уровень важности: <span>Высокий</span></div>
+                    <div class="cabinet-mobile-indik-cont-row">Изменение показателя: <span><img src="img/up.svg" alt=""></span></div>
+                    <div class="cabinet-mobile-indik-cont-row">Изменение курса нац.валюты: <span><img src="img/up.svg" alt=""></span></div>
+                    <div class="cabinet-mobile-indik-cont-row">Описание: <br><br><span>Является главным индикатором, отражающим состояние национальной экономики. Может быть представлен в следующем виде: GDP = C + I + S + E - M, где С - потребление, I - инвестиции, S - государственные расходы, E - экспорт, M - импорт. Как правило, потребительские расходы являются главной составляющей ВВП: в США на их долю приходится 70% ВВП, в Японии – более 60%. Обычно индикатор отображает квартальные данные и публикуется три раза в следующей последовательности: предварительные, пересмотренные и финальные. ВВП может выражаться в виде индекса по отношению к предыдущему периоду рассмотрения или в виде абсолютного значения суммы цен на произведенные товары и услуги. Оказывает значительное влияние на рынок. Рост ВВП приводит к росту курса национальной валюты.</span></div>
+                </div>  
+                <a href="#tab2" class="cabinet-mobile-indik-tab">
+                    Данные по денежной массе М4, М3, М2, М1
+                </a>
+                <div id="tab2" class="cabinet-mobile-indik-cont" style="display: none;">
+                    <div class="cabinet-mobile-indik-cont-row">Уровень важности: <span>Средний</span></div>
+                    <div class="cabinet-mobile-indik-cont-row">Изменение показателя: <span><img src="img/up.svg" alt=""><img src="img/up.svg" alt=""></span></div>
+                    <div class="cabinet-mobile-indik-cont-row">Изменение курса нац.валюты: <span><img src="img/down.svg" alt=""></span></div>
+                    <div class="cabinet-mobile-indik-cont-row">Описание: <br><br><span></span></div>
+                </div>             
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.cabinet-mobile-indik-tab').click(function(e){
+            e.preventDefault();
+            if($(this).hasClass('active')){
+                $('.cabinet-mobile-indik-tab').removeClass('active');
+            }
+            else {
+                $('.cabinet-mobile-indik-tab').removeClass('active');
+                $(this).addClass('active');
+            }
+            
+            $('.cabinet-mobile-indik-cont').slideUp();
+            
+            if($($(this).attr('href')).css('display') == 'block')
+                $($(this).attr('href')).slideUp();
+            else
+                $($(this).attr('href')).slideDown();
+        });        
+    </script>
+</body>
+</html>

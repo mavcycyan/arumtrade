@@ -1,0 +1,169 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ARUM | Meta Trader</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<!--<link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+	<link rel="icon shortcut" href="/static/favicon.ico" type="image/x-in">
+	<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/cabinet-mobile.css">
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="cabinet-mobile">
+        <header class="cabinet-mobile-isreg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <button class="cabinet-mobile-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="cabinet-mobile-logo"><img src="img/logo-mob.svg" alt=""></div>
+                    </div>
+                    <div class="col-xs-6">
+                    </div>
+                    <div class="col-xs-2">
+                        <a href="#" class="cabinet-mobile-logout"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="cabinet-mobile-in">
+            <div class="cabinet-mobile-in-head">
+                <div class="cabinet-mobile-in-head-ttl">Адрес</div>
+                <a href="#" class="cabinet-mobile-in-head-back"></a>
+            </div>
+            <div class="cabinet-mobile-address">
+                <div class="cabinet-mobile-address-info">
+                    <div class="cabinet-mobile-address-ttl forAdr hidden">Адрес регистрации</div>
+                    <div class="cabinet-mobile-address-input">
+                        <span class="imp"></span>
+                        <label for="address1">Страна</label>
+                        <select name="" id="address1">
+                            <option value="" checked disabled></option>
+                            <option value="Россия">Россия</option>
+                            <option value="Украина">Украина</option>
+                        </select>
+                    </div>
+                    <div class="cabinet-mobile-address-input">
+                        <span class="imp"></span>
+                        <label for="address2">Регион</label>
+                        <select name="" id="address2">
+                            <option value="" checked disabled></option>
+                            <option value="Регион1">Регион1</option>
+                            <option value="Регион2">Регион2</option>
+                        </select>
+                    </div>
+                    <div class="cabinet-mobile-address-input">
+                        <span class="imp"></span>
+                        <label for="address3">Город</label>
+                        <select name="" id="address3">
+                            <option value="" checked disabled></option>
+                            <option value="Москва">Москва</option>
+                            <option value="Санкт-Питербург">Санкт-Питербург</option>
+                        </select>
+                    </div>
+                    <div class="cabinet-mobile-address-input">
+                        <span class="imp"></span>
+                        <label for="address4">Индекс</label>
+                        <input type="text" id="address4">
+                    </div>
+                    <div class="cabinet-mobile-address-input">
+                        <span class="imp"></span>
+                        <label for="address5">Улица</label>
+                        <input type="text" id="address5">
+                    </div>
+                    <div class="cabinet-mobile-address-input">
+                        <span class="imp"></span>
+                        <label for="address6">Дом</label>
+                        <input type="text" id="address6">
+                    </div>
+                    <div class="cabinet-mobile-address-input">
+                        <span class="imp"></span>
+                        <label for="address7">Квартира</label>
+                        <input type="text" id="address7">
+                    </div>
+                    <div class="cabinet-mobile-address-ttl forAdr hidden">Адрес проживания</div>
+                    <div class="forAdr hidden">
+                        <div class="cabinet-mobile-address-input">
+                            <span class="imp"></span>
+                            <label for="address8">Страна</label>
+                            <select name="" id="address8">
+                                <option value="" checked disabled></option>
+                                <option value="Россия">Россия</option>
+                                <option value="Украина">Украина</option>
+                            </select>
+                        </div>
+                        <div class="cabinet-mobile-address-input">
+                            <span class="imp"></span>
+                            <label for="address9">Регион</label>
+                            <select name="" id="address9">
+                                <option value="" checked disabled></option>
+                                <option value="Регион1">Регион1</option>
+                                <option value="Регион2">Регион2</option>
+                            </select>
+                        </div>
+                        <div class="cabinet-mobile-address-input">
+                            <span class="imp"></span>
+                            <label for="address10">Город</label>
+                            <select name="" id="address10">
+                                <option value="" checked disabled></option>
+                                <option value="Москва">Москва</option>
+                                <option value="Санкт-Питербург">Санкт-Питербург</option>
+                            </select>
+                        </div>
+                        <div class="cabinet-mobile-address-input">
+                            <span class="imp"></span>
+                            <label for="address11">Индекс</label>
+                            <input type="text" id="address11">
+                        </div>
+                        <div class="cabinet-mobile-address-input">
+                            <span class="imp"></span>
+                            <label for="address12">Улица</label>
+                            <input type="text" id="address12">
+                        </div>
+                        <div class="cabinet-mobile-address-input">
+                            <span class="imp"></span>
+                            <label for="address13">Дом</label>
+                            <input type="text" id="address13">
+                        </div>
+                        <div class="cabinet-mobile-address-input">
+                            <span class="imp"></span>
+                            <label for="address14">Квартира</label>
+                            <input type="text" id="address14">
+                        </div>
+                    </div>
+                    <div class="cabinet-mobile-address-check">
+                        <input type="checkbox" id="address15">
+                        <label for="address15"><span></span>Адрес регистрации не совпадает с адресом фактического проживания</label>
+                    </div>
+                    <a href="#" class="cabinet-mobile-address-btn">Далее</a>
+                    <a href="#" class="cabinet-mobile-address-url">Персональные данные</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#address15').on('change', function(){
+            if($(this).prop('checked'))
+                $('.forAdr').removeClass('hidden')
+            else
+                $('.forAdr').addClass('hidden')
+        });
+    </script>
+</body>
+</html>

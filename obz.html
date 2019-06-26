@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ARUM | Meta Trader</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<!--<link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+	<link rel="icon shortcut" href="/static/favicon.ico" type="image/x-in">
+	<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/cabinet-mobile.css">
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+
+<link rel="stylesheet" href="daterangepicker/daterangepicker.css">
+<script src="daterangepicker/moment.min.js"></script>
+<script src="daterangepicker/daterangepicker.js"></script>    
+    
+</head>
+<body>
+    <div class="cabinet-mobile">
+        <header class="cabinet-mobile-isreg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <button class="cabinet-mobile-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="cabinet-mobile-logo"><img src="img/logo-mob.svg" alt=""></div>
+                    </div>
+                    <div class="col-xs-6">
+                    </div>
+                    <div class="col-xs-2">
+                        <a href="#" class="cabinet-mobile-logout"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="cabinet-mobile-in">
+            <div class="cabinet-mobile-in-head">
+                <div class="cabinet-mobile-in-head-ttl">Еженедельные обзоры</div>
+                <a href="#" class="cabinet-mobile-in-head-back"></a>
+            </div>
+            <div class="cabinet-mobile-obz">
+                <div class="cabinet-mobile-obz-date">
+                    <input type="text" value="с 1 марта по 1 мая" id="date">
+                    <div class="calend"></div>
+                </div>
+                <div class="cabinet-mobile-obz-bl">
+                    <div class="cabinet-mobile-obz-bl-date">27 мая 2019 г. — 31 мая 2019 г.</div>
+                    <div class="cabinet-mobile-obz-bl-ttl">Индекс деловой активности в производ- ственном секторе от ISM</div>
+                    <div class="cabinet-mobile-obz-bl-img"><img src="img/obz-img.jpg" /></div>
+                </div>
+                <div class="cabinet-mobile-obz-bl">
+                    <div class="cabinet-mobile-obz-bl-date">27 мая 2019 г. — 31 мая 2019 г.</div>
+                    <div class="cabinet-mobile-obz-bl-ttl">Индекс деловой активности в производ- ственном секторе от ISM</div>
+                    <div class="cabinet-mobile-obz-bl-img"><img src="img/obz-img.jpg" /></div>
+                </div>
+                <div class="cabinet-mobile-obz-bl">
+                    <div class="cabinet-mobile-obz-bl-date">27 мая 2019 г. — 31 мая 2019 г.</div>
+                    <div class="cabinet-mobile-obz-bl-ttl">Индекс деловой активности в производ- ственном секторе от ISM</div>
+                    <div class="cabinet-mobile-obz-bl-img"><img src="img/obz-img.jpg" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+         $('#date').daterangepicker({
+         locale: {
+            format: 'DD.MM.YYYY',
+            fromLabel: 'с',
+            toLabel: 'по',
+            customRangeLabel: "Свой",
+             applyLabel: "Применить",
+             cancelLabel: "Отмена",
+             daysOfWeek: [
+                "Вс",
+                "Пн",
+                "Вт",
+                "Ср",
+                "Чт",
+                "Пт",
+                "Сб"
+            ],
+             monthNames: [
+                "Январь",
+                "Февраль",
+                "Март",
+                "Апрель",
+                "Май",
+                "Июнь",
+                "Июль",
+                "Август",
+                "Сентябрь",
+                "Октябрь",
+                "Ноябрь",
+                "Декабрь"
+            ],             
+         }
+         });
+        });    
+    </script>
+</body>
+</html>

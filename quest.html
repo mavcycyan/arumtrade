@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ARUM | Meta Trader</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<!--<link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+	<link rel="icon shortcut" href="/static/favicon.ico" type="image/x-in">
+	<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/cabinet-mobile.css">
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="cabinet-mobile">
+        <header class="cabinet-mobile-isreg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <button class="cabinet-mobile-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="cabinet-mobile-logo"><img src="img/logo-mob.svg" alt=""></div>
+                    </div>
+                    <div class="col-xs-6">
+                    </div>
+                    <div class="col-xs-2">
+                        <a href="#" class="cabinet-mobile-logout"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="cabinet-mobile-in">
+            <div class="cabinet-mobile-in-head">
+                <div class="cabinet-mobile-in-head-ttl">Вопрос аналитику</div>
+                <a href="#" class="cabinet-mobile-in-head-back"></a>
+            </div>
+            <div class="cabinet-mobile-quest">
+                <a href="#tab1" class="cabinet-mobile-quest-tab">
+                    <span class="cabinet-mobile-quest-tab-top">
+                        <span class="cabinet-mobile-quest-tab-img"><img src="img/quest-img.jpg" alt=""></span>
+                        <span class="cabinet-mobile-quest-tab-info">
+                            <span class="cabinet-mobile-quest-tab-ttl">Иван П.</span>
+                            <span class="cabinet-mobile-quest-tab-txt">23 октября 2018 г. 16:48</span>
+                        </span>
+                    </span>
+                    <span class="cabinet-mobile-quest-tab-btm">Hello I would like to ask what is the meaning ofthis MA10 MA20 MA50 MA100 MACD BBands Ichimoku Stochastic William`s ZigZag?</span>
+                </a>
+                <div id="tab1" class="cabinet-mobile-quest-cont" style="display: none;">
+                    <span class="cabinet-mobile-quest-cont-top">
+                        <span class="cabinet-mobile-quest-cont-img"><img src="img/empty-photo.svg" alt=""></span>
+                        <span class="cabinet-mobile-quest-cont-ttl">Analyst</span>
+                    </span>
+                    <div class="cabinet-mobile-quest-cont-row"><span>Также известна как алгоритмическая торговля и используется для разделения крупных сделок на несколько частей с целью управления рисками и степенью влияния со стороны рынка. Автоматизированная торговля предполагает использование компьютерных программ для открытия торговых сделок. В ней используются математические модели (алгоритмы) для принятия решений и совершения операций на финансовом рынке. Компьютерный алгоритм управляет такими параметрами сделки как, например, время, цена или объём по большей части без какого-либо участия человека</span></div>
+                </div> 
+                <a href="#tab2" class="cabinet-mobile-quest-tab">
+                    <span class="cabinet-mobile-quest-tab-top">
+                        <span class="cabinet-mobile-quest-tab-img"><img src="img/quest-img.jpg" alt=""></span>
+                        <span class="cabinet-mobile-quest-tab-info">
+                            <span class="cabinet-mobile-quest-tab-ttl">Иван П.</span>
+                            <span class="cabinet-mobile-quest-tab-txt">23 октября 2018 г. 16:48</span>
+                        </span>
+                    </span>
+                    <span class="cabinet-mobile-quest-tab-btm">Hello I would like to ask what is the meaning ofthis MA10 MA20 MA50 MA100 MACD BBands Ichimoku Stochastic William`s ZigZag?</span>
+                </a>
+                <div id="tab2" class="cabinet-mobile-quest-cont" style="display: none;">
+                    <span class="cabinet-mobile-quest-cont-top">
+                        <span class="cabinet-mobile-quest-cont-img"><img src="img/empty-photo.svg" alt=""></span>
+                        <span class="cabinet-mobile-quest-cont-ttl">Analyst</span>
+                    </span>
+                    <div class="cabinet-mobile-quest-cont-row"><span>Также известна как алгоритмическая торговля и используется для разделения крупных сделок на несколько частей с целью управления рисками и степенью влияния со стороны рынка. Автоматизированная торговля предполагает использование компьютерных программ для открытия торговых сделок. В ней используются математические модели (алгоритмы) для принятия решений и совершения операций на финансовом рынке. Компьютерный алгоритм управляет такими параметрами сделки как, например, время, цена или объём по большей части без какого-либо участия человека</span></div>
+                </div> 
+                <div class="cabinet-mobile-quest-send-wp">
+                    <div class="cabinet-mobile-quest-send">
+                        <input type="text" placeholder="Сообщение">
+                        <button></button>
+                    </div>
+                </div>                              
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.cabinet-mobile-quest-tab').click(function(e){
+            e.preventDefault();
+            if($(this).hasClass('active')){
+                $('.cabinet-mobile-quest-tab').removeClass('active');
+            }
+            else {
+                $('.cabinet-mobile-quest-tab').removeClass('active');
+                $(this).addClass('active');
+            }
+            
+            $('.cabinet-mobile-quest-cont').slideUp();
+            
+            if($($(this).attr('href')).css('display') == 'block')
+                $($(this).attr('href')).slideUp();
+            else
+                $($(this).attr('href')).slideDown();
+        });        
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ARUM | Meta Trader</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<!--<link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+	<link rel="icon shortcut" href="/static/favicon.ico" type="image/x-in">
+	<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic,latin-ext" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/cabinet-mobile.css">
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="cabinet-mobile">
+        <header class="cabinet-mobile-nonreg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <button class="cabinet-mobile-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="cabinet-mobile-logo"><img src="img/logo-mob.svg" alt=""></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#" class="cabinet-mobile-callback">Обратный звонок</a>
+                    </div>
+                    <div class="col-xs-2">
+                        <a href="#" class="cabinet-mobile-auth"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="cabinet-mobile-logreg">
+            <div class="cabinet-mobile-logreg-tabs">
+                <a href="#log" class="active">Логин</a>
+                <a href="#reg">регистрация</a>
+            </div>
+            <div id="log" class="cabinet-mobile-logreg-cont active">
+                <div class="container">
+                    <div class="cabinet-mobile-logreg-ttl">Вход</div>
+                    <form action="">
+                        <div class="cabinet-mobile-logreg-input"><input type="text" placeholder="Телефон"></div>
+                        <div class="cabinet-mobile-logreg-input"><input type="text" placeholder="Пароль"></div>
+                        <div class="cabinet-mobile-logreg-forgot"><a href="#">Забыли пароль ?</a></div>
+                        <div class="cabinet-mobile-logreg-btn"><button type="submit">Войти</button></div>
+                    </form>
+                </div>
+            </div>
+            <div id="reg" class="cabinet-mobile-logreg-cont">
+                <div class="container">
+                    <div class="cabinet-mobile-logreg-ttl">Регистрация</div>
+                    <form action="">
+                        <div class="cabinet-mobile-logreg-input"><input type="text" placeholder="Имя (латиницей)"></div>
+                        <div class="cabinet-mobile-logreg-input"><input type="text" placeholder="Фамилия (латиницей)"></div>
+                        <div class="cabinet-mobile-logreg-input"><input type="text" placeholder="Телефон"></div>
+                        <div class="cabinet-mobile-logreg-txt">На Ваш номер телефона придет sms с паролем от личного кабинета. Этот шаг является частью процедуры <b>KYC (Know Your Customer - знай своего клиента),</b> предусмотренной законодательством Вануату. Пожалуйста, укажите корректный номер телефона.</div>
+                        <div class="cabinet-mobile-logreg-input"><input type="text" placeholder="E-mail"></div>
+                        <div class="cabinet-mobile-logreg-txt">Вы будете получать информацию о всех транзакциях вашего аккаунта. Пожалуйста, введите корректный email.</div>
+                        <div class="cabinet-mobile-logreg-check"><input type="checkbox" id="chk"><label for="chk"><span></span>Я понимаю, что торговля маржинальными продуктами, как Forex и CFDs, несет высокий риск и может привести к полной потере депозита. Я подтверждаю свое совершенолетие. Я согласен с Политикой конфиденциальности.</label></div>
+                        <div class="cabinet-mobile-logreg-btn"><button type="submit">Зарегистрироваться</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.cabinet-mobile-logreg-tabs > a').click(function(e){
+            e.preventDefault();
+            $('.cabinet-mobile-logreg-tabs > a').removeClass('active');
+            $('.cabinet-mobile-logreg-cont').removeClass('active');
+            $(this).addClass('active');
+            $($(this).attr('href')).addClass('active');
+        });
+    </script>
+</body>
+</html>
